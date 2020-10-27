@@ -4,27 +4,26 @@
 #
 #    pip-compile --output-file requirements.txt requirements.in
 #
-argparse==1.4.0
-asn1crypto==0.24.0        # via cryptography
+argparse==1.4.0           # via -r requirements.in
 certifi==2018.4.16        # via requests
 cffi==1.11.5              # via cryptography
 chardet==3.0.4            # via requests
 click==6.7                # via pip-tools
-cryptography==2.3.1       # via oauthlib
+cryptography==3.2         # via oauthlib
 defusedxml==0.5.0         # via jira
 first==2.0.1              # via pip-tools
-idna==2.7                 # via cryptography, requests
-jira==2.0.0
-lxml==4.2.4
+idna==2.7                 # via requests
+jira==2.0.0               # via -r requirements.in
+lxml==4.2.4               # via -r requirements.in
 oauthlib[signedtoken]==2.1.0  # via jira, requests-oauthlib
 pbr==4.2.0                # via jira
-pip-tools==2.0.2
-progressbar2==3.38.0
+pip-tools==2.0.2          # via -r requirements.in
+progressbar2==3.38.0      # via -r requirements.in
 pycparser==2.18           # via cffi
 pyjwt==1.6.4              # via oauthlib
 python-utils==2.3.0       # via progressbar2
 requests-oauthlib==1.0.0  # via jira
 requests-toolbelt==0.8.0  # via jira
-requests==2.19.1
+requests==2.19.1          # via -r requirements.in, jira, requests-oauthlib, requests-toolbelt
 six==1.11.0               # via cryptography, jira, pip-tools, progressbar2, python-utils
 urllib3==1.23             # via requests
