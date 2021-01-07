@@ -16,7 +16,7 @@ setup(
     packages=['jira2github'],
     install_requires=[
         'argparse==1.4.0',
-        'lxml==4.2.4',
+        'lxml==4.6.2',
         'progressbar2==3.38.0',
         'requests==2.19.1',
     ],
